@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">myproject</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="choose_level">Choose the Question Type :</string>
+    <string-array name="ques_level_array">
+        <item> Easy </item>
+        <item> Medium </item>
+        <item> Difficult </item>
+    </string-array>
+
+    <array name="ques_level_color_Array">
+        <item>@color/easy_color</item>
+        <item>@color/medium_color</item>
+        <item>@color/difficult_color</item>
+    </array>
+
+    <string name="enter_username">Enter UserName</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="next_question">Next Question</string>
+    <string name="login">LOGIN</string>
+
+    <string name="test_result">TEST RESULT</string>
+    <string name="total_questions">No. of Questions : Total</string>
+    <string name="attempt_questions">No. of Questions : Answered</string>
+    <string name="correct_question"> No. of Questions : Correct</string>
+    <string name="wrong_question">No. of Questions : Wrong</string>
+
+    <string name="exit">EXIT</string>
+    <string name="restart">RESTART</string>
+
+</resources>

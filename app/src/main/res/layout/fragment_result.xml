@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@android:color/white"
+    android:shrinkColumns="*"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:layout_span="3"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@android:color/holo_green_light"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/test_result"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="50dp"
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/total_questions"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="="/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/total_ques_no"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/attempt_questions"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="="/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/answered_ques_no"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/correct_question"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="="/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold|italic"
+            android:id="@+id/correct_ques_no"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_marginTop="@dimen/activity_horizontal_margin">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wrong_question"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="="/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/wrong_ques_no"/>
+    </TableRow>
+
+
+    <TableRow
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:background="@android:color/holo_green_light"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/restart"
+            android:id="@+id/restart_button"/>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:background="@android:color/holo_red_dark"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text="@string/exit"
+            android:id="@+id/exit_button"/>
+
+    </TableRow>
+
+
+
+</TableLayout>
